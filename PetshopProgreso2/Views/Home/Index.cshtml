@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "PetShop-Online";
+}
+
+<div classs="text-center">
+
+    <h1 style="text-align:center">Bienvenido a Petshop Online</h1>
+    <h2></h2>
+    <h3 style="text-align:center">La primera tienda de mascotas 100% online del Ecuador</h3>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.postimg.cc/DzH8H4r5/Web-1920-5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.postimg.cc/4NVqhD23/Web-1920-7.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.postimg.cc/V6vWBtYR/Web-1920-9.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<div class="form-group">
+    <label for="exampleInputPassword1"> </label>
+</div>
+<div class="flex-parent jc-center">
+    <input style="text-align:center" type="button" class="btn btn-outline-primary" value="Ir a Clientes" onclick=" relocate_Cliente()">
+    <input style="text-align:center" type="button" class="btn btn-outline-info" value="Ir a Mascotas" onclick=" relocate_Mascota()">
+    <input style="text-align:center" type="button" class="btn btn-outline-dark" value="Ver Ubicación" onclick=" relocate_Mapa1()">
+</div>
+
+
+<script>
+
+    function relocate_Cliente() {
+        location.href = "http://localhost:5053/Cliente";
+    }
+
+    function relocate_Mascota() {
+        location.href = "http://localhost:5053/Producto";
+    }
+
+    function relocate_Mapa1() {
+        location.href = "https://goo.gl/maps/66BKSpiEhg73pcxJA?coh=178573&entry=tt";
+    }
+
+</script>
