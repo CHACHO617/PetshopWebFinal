@@ -14,7 +14,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
+                <input asp-for="Id" class="form-control" readonly/>
                 <span asp-validation-for="Id" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -41,6 +41,11 @@
                 <label asp-for="Email" class="control-label"></label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contrasena" class="control-label">Contraseña</label>
+                <input asp-for="Contrasena" class="form-control" type="password"/>
+                <span asp-validation-for="Contrasena" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1"> </label>

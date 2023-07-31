@@ -1,6 +1,127 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "PetShop-Online";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="wrapper">
+    <div class="section section-about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h2 class="title">¿Quienes Somos?</h2>
+                    <h5 class="description">En PawMarket, somos un grupo apasionado de amantes de los animales que se dedica a proporcionar productos y servicios de alta calidad para mascotas. Nos encanta trabajar con mascotas y sus dueños para asegurarnos de que todas las necesidades de las mascotas se cumplan y se superen.</h5>
+                </div>
+            </div>
+            <div class="separator separator-primary"></div>
+            <div class="section-story-overview">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="image-container image-left" style="background-image: url('/Images/Imagen 3.jpg')">
+                            <p class="blockquote blockquote-primary">
+                                "Estoy impresionado con el servicio y la calidad de los productos que he recibido de PawMarket. Mi perro está disfrutando de sus nuevos juguetes y la comida que compré en PawMarket. "
+                                <br>
+                                <br>
+                                <small>Miguel</small>
+                            </p>
+                        </div>
+                        <div class="image-container" style="background-image: url('/Images/Imagen 2.jpg')"></div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="image-container image-right" style="background-image: url('/Images/Imagen 1.jpg')"></div>
+                        <p>
+                            Fundada en el año 2020, nuestra empresa se ha convertido en una referencia en la industria de las mascotas gracias a nuestra amplia experiencia y nuestro compromiso con el bienestar animal. Nos aseguramos de que todos nuestros productos sean de la más alta calidad y seleccionamos cuidadosamente cada artículo que ofrecemos en nuestra tienda en línea.
+                        </p>
+                        <p>
+                            En PawMarket, creemos que cada mascota merece una vida feliz y saludable, y nos esforzamos por ayudar a los dueños de mascotas a hacer que eso suceda. Además de nuestra tienda en línea, ofrecemos consejos y recursos para ayudar a los dueños de mascotas a tomar decisiones informadas sobre la alimentación, el cuidado y la salud de sus mascotas.
+                        </p>
+                        <p>
+                            Estamos comprometidos con la satisfacción del cliente y siempre estamos disponibles para responder cualquier pregunta o inquietud que puedas tener sobre nuestros productos o servicios. Nos enorgullece ser un recurso confiable para la comunidad de dueños de mascotas y esperamos seguir creciendo y ayudando a más personas a proporcionar un hogar seguro y feliz para sus mascotas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="d-flex">
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="~/Images/Card 1.jpeg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Comida</h4>
+                <input style="text-align:center" type="button" class="btn btn-outline-secondary" value="Ir a Productos" onclick=" relocate_Mascota()">
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="~/Images/Card 7.jpeg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Juguetes</h4>
+                <input style="text-align:center" type="button" class="btn btn-outline-secondary" value="Ir a Productos" onclick=" relocate_Mascota()">
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="~/Images/Card 5.jpeg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Disfraces</h4>
+                <input style="text-align:center" type="button" class="btn btn-outline-secondary" value="Ir a Productos" onclick=" relocate_Mascota()">
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="~/Images/Card 6.jpeg" alt="Card  image">
+            <div class="card-body">
+                <h4 class="card-title">Servicios</h4>
+                <input style="text-align:center" type="button" class="btn btn-outline-secondary" value="Ir a Productos" onclick=" relocate_Mascota()">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section section-contact-us text-center">
+        <div class="container">
+            <h2 class="title">¿Quieres Trabajar con Nosotros?</h2>
+            <h3 class="description" >Contactanos</h3>
+            <div class="row">
+                <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
+                    <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg" height="50" width="50" />
+                            
+                        </div>
+                        <input type="text" class="form-control" placeholder="Nombre...">
+                    </div>
+                    <div class="input-group input-lg">
+                        <div class="input-group-prepend">
+
+                            <img src="https://static.vecteezy.com/system/resources/previews/020/009/601/original/email-and-mail-icon-black-free-png.png" height="50" width="50" />
+
+                        </div>
+                        <input type="text" class="form-control" placeholder="Correo...">
+                    </div>
+                    <div class="textarea-container">
+                        <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Escribir Mensaje..."></textarea>
+                    </div>
+                    <div class="send-button paddingSend">
+                        <a href="#" class="btn btn-primary btn-round btn-block btn-lg">ENVIAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    function relocate_Cliente() {
+        location.href = "http://localhost:5053/Cliente";
+    }
+
+    function relocate_Mascota() {
+        location.href = "http://localhost:5053/Producto";
+    }
+
+    function relocate_Mapa1() {
+        location.href = "https://goo.gl/maps/66BKSpiEhg73pcxJA?coh=178573&entry=tt";
+    }
+
+</script>
